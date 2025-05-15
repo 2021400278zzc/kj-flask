@@ -146,11 +146,33 @@ pip install -r requirements.txt
 4. 配置环境变量
 创建 `.env` 文件，包含以下配置：
 ```
-SECRET_KEY=your_secret_key
-DATABASE_URL=mysql://username:password@localhost/dbname
-OPENAI_API_KEY=your_openai_api_key (可选)
-```
+# 数据库配置
+DATABASE_URL=mysql://user:password@host/dbname
+MYSQL_HOST=localhost
+MYSQL_USER=root
+MYSQL_PASSWORD=your_password
+MYSQL_DB=oa
 
+# JWT配置
+JWT_SECRET_KEY=your_jwt_secret
+SECRET_KEY=your_app_secret
+
+# 腾讯云配置（短信服务）
+TENCENTCLOUD_SECRET_ID=your_secret_id
+TENCENTCLOUD_SECRET_KEY=your_secret_key
+SMS_SDK_APP_ID=your_app_id
+SIGN_NAME=your_sign_name
+TEMPLATE_ID=your_template_id
+
+# 邮件配置
+EMAIL_SMTP=smtp.example.com
+EMAIL_ACCOUNT=your_email
+EMAIL_PASSWORD=your_password
+
+# OpenAI配置
+OPENAI_API_KEY=your_api_key
+DEEPSEEK_API_KEY=your_api_key
+```
 5. 初始化数据库
 ```bash
 flask db init
