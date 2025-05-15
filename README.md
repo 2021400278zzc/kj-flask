@@ -126,7 +126,7 @@
 1. 克隆仓库
 ```bash
 git clone https://github.com/2021400278zzc/kj-flask.git
-cd oa后端框架
+cd kj-flask
 ```
 
 2. 创建并激活虚拟环境
