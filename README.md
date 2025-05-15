@@ -125,7 +125,7 @@
 
 1. 克隆仓库
 ```bash
-git clone https://github.com/yourusername/oa后端框架.git
+git clone https://github.com/2021400278zzc/kj-flask.git
 cd oa后端框架
 ```
 
